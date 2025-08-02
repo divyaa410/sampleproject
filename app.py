@@ -1,7 +1,10 @@
-from flask import Flask 
-app=Flask(__name__)
+from flask import Flask
+app=Flask(_name_)
 @app.route("/")
 def index():
     return "Welcome to MRECW"
-if__name__=="__main__":
+@app.route("/home")
+def home():
+    return "home page"
+if _name=="main_":
     app.run(host='0.0.0.0',port=10000)
