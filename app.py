@@ -3,7 +3,6 @@ app=Flask(__name__)
 @app.route("/")
 def index():
     return render_template("index.html")
-    return "Welcome to MRECW"
 @app.route("/home")
 def home():
     return "home page"
